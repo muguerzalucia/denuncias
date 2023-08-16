@@ -635,9 +635,7 @@ legend{
         display: flex;
             flex-direction: column;
        }
-       .inferior_largo{
-        display:none;
-       }
+   
        
 }
 @media screen and (max-width:900px) {
@@ -649,49 +647,31 @@ legend{
        .card_sup{
         display:none
        }
-       .inferior_largo{
-        display:none;
-       }
+      
 }
 /* ---- pantalla tablet (768- 1023)---- */
 @media screen and (min-width:481px) and (max-width:900px){
-   
-    
+
+    .inferior .card{
+     width: 100%;
+    }
 }
 
 /*-----pantalla pequeña 320 en vertical o 480 en horizontal----*/
 @media screen and (max-width: 480px){
+    .sup{
+        margin: 5%;
+
+    }
     .banner{
         display: none;
     }
     .card_sup{
         display:none
        }
-    .inferior .card{
+       .inferior .card{
         display: none;
-      width: 100%;
     }
-    .inferior_largo{
-        display: flex;
-        flex-direction: column;
-    }
-    .inferior_largo .card mb-3{
-        width: 300px;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-    }
-    .inferior_largo .card-body {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-    }
-}
-
-
-
-
-
  /* ----- estilos blog -----*/
  .datos{
     margin-top: 0;
